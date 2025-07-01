@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
+
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .main-content {
+    display: flex;
+    padding: 20px 50px;
+  }
+
+  .left-content {
+    flex: 2;
+    margin-right: 20px;
+  }
+
+  .left-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .left-content h1 {
+    font-size: 36px;
+    margin: 20px 0 10px;
+  }
+
+  .left-content p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .left-content button {
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+
+  .right-content {
+    flex: 1;
+    background-color: #000022;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .right-content h2 {
+    color: yellow;
+    margin-top: 0;
+  }
+
+  .right-content .news-item {
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+  }
+
+  .right-content .news-item:last-child {
+    border-bottom: none;
+  }
+
+  .right-content .news-item h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+  }
+
+  .bottom-articles {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+
+  .bottom-article {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .bottom-article img {
+    width: 15%;
+    border-radius: 5px;
+  }
+
+  .bottom-article h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+  }
+
+  .bottom-article p {
+    color: #555;
+    font-size: 14px;
+  }
+
+  .bottom-article span {
+    display: block;
+    font-size: 24px;
+    color: #ddd;
+    margin-top: 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+  } */
+
+
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .nav-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-items li {
+    margin-left: 20px;
+  }
+  
+  .nav-items li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .menu-button button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #menu-close {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .hero-section {
+    padding: 20px;
+  }
+  
+  .hero-img img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }
+  
+  .main-text {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  
+  .hero-section p {
+    color: #555;
+  }
+  
+  .hero-section button {
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .right-block {
+    background: #000022;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .right-block h2 {
+    color: yellow;
+  }
+  
+  .right-block .news1,
+  .right-block .news2,
+  .right-block .news3 {
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+  }
+  
+  .right-block .news3 {
+    border-bottom: none;
+  }
+  
+  .second-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .second-section .card {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .second-section .card img {
+    width: 15%;
+  }
+  
+  .second-section .card h3 {
+    margin-top: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-items {
+      flex-direction: column;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+      background: white;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+  
+    nav.open {
+      display: flex;
+    }
+  
+    .menu-button button {
+      display: block;
+    }
+  
+    #menu-close {
+      display: block;
+      align-self: flex-end;
+    }
+  
+    .second-section {
+      flex-direction: column;
+    }
+  
+    .second-section .card {
+      margin-bottom: 20px;
+    }
+  }
+  
