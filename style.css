@@ -16,18 +16,18 @@ body {
     height: 40px;
   }
   
-  .nav-items {
+  .nav-itmes {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
   }
   
-  .nav-items li {
+  .nav-itmes li {
     margin-left: 20px;
   }
   
-  .nav-items li a {
+  .nav-itmes li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
